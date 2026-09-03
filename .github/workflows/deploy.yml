@@ -2,9 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ['main'] # или 'master'
+    branches: ['main']
 
-# ДОБАВЬТЕ ЭТОТ БЛОК:
 permissions:
   contents: write
   pages: write
