@@ -1,0 +1,1 @@
+export { DeleteSlideModal } from './ui/DeleteSlideModal'

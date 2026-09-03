@@ -1,0 +1,25 @@
+.viewport {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 70%;
+    padding: 0 2%;
+    transition: opacity 0.2s;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin-left: 0;
+    }
+    .slide {
+      flex: 0 0 100% !important;
+      padding: 0 !important;
+    }
+  }
