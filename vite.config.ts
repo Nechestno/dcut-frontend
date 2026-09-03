@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   plugins: [react()],
-  base: '/dcut-frontend',
+  base: '/dcut-frontend/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
