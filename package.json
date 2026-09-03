@@ -6,11 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy":  "gh-pages -d dist"
+    "build": "vite build && copy dist\\index.html dist\\404.html",
+    "deploy": "npm run build && npx gh-pages -d dist"
   },
   "dependencies": {
     "@mantine/core": "^9.6.0",
